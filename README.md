@@ -15,10 +15,11 @@ For this challenge we provide you with data recording all unplanned stop events 
 Train data file:
 
 File containing logs from 2017 to 2019, describing each downtime for each wind turbine. The Duration_categoriesis the column we want to predict; the categories have been mapped into numbers for computing a metric, but behind the numbers are the following stopping times categories:
-<=30 minutes: 1
-]30 minutes-3hours]: 2
-]3 hours-24 hours]: 3
-]24 hours-7 days]: 4
-> 7 days: 5
+- <=30 minutes: 1
+- ]30 minutes-3hours]: 2
+- ]3 hours-24 hours]: 3
+- ]24 hours-7 days]: 4
+- > 7 days: 5
+
 Turbines names MAC_CODE have been anonymized, but consistently refer to the same wind farm when relevant.
 You are also given Duration column, as it is more precise than Duration_categories and could possibly help for training ; but it does not exist in the test file and we want to predict Duration_categories.
